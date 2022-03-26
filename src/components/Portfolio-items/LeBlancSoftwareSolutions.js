@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../css/Portfolio-itemStyles.css';
+import { Route, Link} from 'react-router-dom';
 
 const LSS = () => {
   return (
@@ -16,9 +17,16 @@ const LSS = () => {
 
                     <img className='LSS-griditem--img' src={require('../../assets/portfolio-items/LSS-hire-me.png')} />
 
-                    <a className='LSS-viewsite--link' href='https://leblancsoftwaresolutions.com'>
-                        <p>View live site</p>
+
+                    {/*Link to leblancsoftwaresolutiojns.com */}
+                    {/* <a className='LSS-viewsite--link' >
+                        <Link to={'http://leblancsoftwaresolutions.com'}>view live site</Link>
+                    </a> */}
+
+                    <a className='LSS-viewsite--link' >
+                        <p>LeblancSoftwareSolutions.com</p>
                     </a>
+
                 </div>
                 <div className="LSS-container--griditem2">
                     <p className='googleclone-container--body'>
