@@ -1,0 +1,240 @@
+/*  Pattern to stick to  */
+/*  homepage-intro--body  */
+/*  {component}-{div / container}--{w  */
+
+:root {
+  --main-color: #201e1d;
+  --main-color-dark: #141616;
+  --main-color-light: #4b5a53;
+  --accent-color: #51eef5;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+h1 {
+  color: var(--accent-color);
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+.portfolio-container--griditem p {
+    text-align: center;
+}
+
+/* HeroImage Component styles  */
+
+
+
+    .hero-container {
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        padding: 20px;
+        margin: 3% 5% 3% 5%;
+        border-radius: 25px;
+        border: 5px solid var(--accent-color);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .kyle {
+        color: var(--accent-color);
+    }
+
+    .hero-container h1 {
+        color: white;
+    }
+
+    .hero-container--content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroimage-herocontainer--img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero-container--title {
+        background-color: var(--main-color-light);
+        color: white;
+        padding: 20px;
+        margin: 20px;
+        width: 25%;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 10%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .hero-container--body {
+        background-color: var(--main-color);
+        padding: 20px;
+        margin: 20px;
+        margin-bottom: 10%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    }
+
+/* .hero-container {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.hero-container h1 {
+  color: var(--main-color-dark);
+}
+
+.hero-container--content {
+}
+
+.heroimage-herocontainer--img {
+  width: 100%;
+  height: auto;
+} */
+
+/* HeroImage Component styles end  */
+
+/* About Component Styles */
+
+.about-container--body {
+  background-color: var(--main-color);
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 10%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.about-container--bodybottom {
+  margin-bottom: 15%;
+}
+
+.about-outercontainer {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 20px;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+/* About Component Styles end */
+
+/* Skills Component Styles  */
+
+@media (min-device-width: 600px) {
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    margin-bottom: 15%;
+  }
+
+  .skills-container--body {
+    background-color: var(--main-color);
+    padding: 20px;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .skills-container--bodybottom {
+    margin-bottom: 15%;
+  }
+
+  .skills-outercontainer {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 20px;
+    border-bottom: 2px solid var(--accent-color);
+  }
+
+  .footer-outercontainer {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    background-color: white;
+    color: black;
+    border-bottom: 2px solid var(--accent-color);
+  }
+
+  .footer-container > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.skills-outercontainer {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 20px;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.skills-container--body {
+  background-color: var(--main-color);
+  padding: 20px;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Skills Component Styles End */
+
+/* Portfolio Component Styles  */
+
+.portfolio-griditem--img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-container--griditem {
+  padding: 5% 10% 5% 10%;
+}
+
+/* Footer Styles  */
+
+.footer-outercontainer {
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  background-color: white;
+  color: black;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.footer-container > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
