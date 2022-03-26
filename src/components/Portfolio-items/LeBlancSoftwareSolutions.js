@@ -16,7 +16,7 @@ const LSS = () => {
 
                     <img className='LSS-griditem--img' src={require('../../assets/portfolio-items/LSS-hire-me.png')} />
 
-                    <a className='LSS-viewsite--link' href='https:LeblancSoftwareSolutions.com'>
+                    <a className='LSS-viewsite--link' href='https://LeblancSoftwareSolutions.com'>
                         <p>View live site</p>
                     </a>
                 </div>
