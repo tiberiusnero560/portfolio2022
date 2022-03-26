@@ -5,35 +5,17 @@ const Footer = () => {
   return (
     <div className='footer-outercontainer'>
         <div className='footer-container'>
-            <ul>
+            <ul class="social-list">
+            
+              
                 <li>
-                    <a href='
-                    '>
-                        <i className="fab fa-github"></i>
+                    <a href="mailto:kyle.leblanc88@gmail.com?subject=" class="footer__link" class="contact-button-a">
+                        <button class="contact-button">Contact</button>
                     </a>
                 </li>
-                <li>
-                    <a href='
-                    '>
-                        <i className="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href='
-                    '>
-                        <i className="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href='
-                    '>
-                        <i className="fab fa-facebook"></i>
-                    </a>
-                </li>
+               
             </ul>
-            <p>
-                &copy; 2020 Kyle LeBlanc
-            </p>
+
         </div>
     </div>
   )
