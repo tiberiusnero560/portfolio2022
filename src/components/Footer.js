@@ -13,7 +13,7 @@ const Footer = () => {
                 </li>
             </ul>
             <p>
-                &copy; 2020 Kyle LeBlanc
+                &copy; 2022 Kyle LeBlanc
             </p>
         </div>
     </div>
