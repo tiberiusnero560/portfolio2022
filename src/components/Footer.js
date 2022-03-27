@@ -5,12 +5,12 @@ const Footer = () => {
   return (
     <div className='footer-outercontainer'>
         <div className='footer-container'>
-            <ul class="social-list">
+            <ul className="social-list">
             
               
                 <li>
-                    <a href="mailto:kyle.leblanc88@gmail.com?subject=" class="footer__link" class="contact-button-a">
-                        <button class="contact-button">Contact</button>
+                    <a href="mailto:kyle.leblanc88@gmail.com?subject=" className="footer__link" className="contact-button-a">
+                        <button className="contact-button">Contact</button>
                     </a>
                 </li>
                
