@@ -7,6 +7,7 @@ const Footer = () => {
         <div className='footer-container'>
             <ul>
                 <li>
+<<<<<<< Updated upstream
                     <a href='
                     '>
                         <i className="fab fa-github"></i>
@@ -28,6 +29,10 @@ const Footer = () => {
                     <a href='
                     '>
                         <i className="fab fa-facebook"></i>
+=======
+                    <a href="mailto:kyle.leblanc88@gmail.com?subject=" className="footer__link" className="contact-button-a">
+                        <button className="contact-button">Contact</button>
+>>>>>>> Stashed changes
                     </a>
                 </li>
             </ul>
