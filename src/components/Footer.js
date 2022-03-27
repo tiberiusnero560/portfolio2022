@@ -9,7 +9,7 @@ const Footer = () => {
             
               
                 <li>
-                    <a href="mailto:kyle.leblanc88@gmail.com?subject=" className="footer__link" className="contact-button-a">
+                    <a href="mailto:kyle.leblanc88@gmail.com?subject=" className="footer__link">
                         <button className="contact-button">Contact</button>
                     </a>
                 </li>
