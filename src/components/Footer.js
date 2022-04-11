@@ -15,7 +15,7 @@ const Footer = () => {
                 </li>
                
             </ul>
-
+            <p>
                 &copy; 2022 Kyle LeBlanc
             </p>
 
@@ -23,8 +23,9 @@ const Footer = () => {
 
         </div>
     </div>
-  )
+    )
 }
+
      
 
 export default Footer
