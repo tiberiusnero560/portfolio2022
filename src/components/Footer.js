@@ -5,16 +5,22 @@ const Footer = () => {
   return (
     <div className='footer-outercontainer'>
         <div className='footer-container'>
-            <ul>
+            <ul className="social-list">
+            
+              
                 <li>
                     <a href="mailto:kyle.leblanc88@gmail.com?subject=" className="footer__link">
                         <button className="contact-button">Contact</button>
                     </a>
                 </li>
+               
             </ul>
-            <p>
+
                 &copy; 2022 Kyle LeBlanc
             </p>
+
+
+
         </div>
     </div>
   )
