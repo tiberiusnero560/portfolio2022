@@ -183,6 +183,10 @@ p {
         border-bottom: 2px solid var(--accent-color);
     }
  
+
+   .portfolio-container--griditem {
+        padding: 5% 20% 5% 20%;
+    }
 }
 
 
@@ -219,6 +223,10 @@ p {
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     }
 
+    .portfolio-container--griditem {
+        padding: 5% 15% 5% 15%;
+    }
+
 
 
 }
@@ -250,9 +258,7 @@ p {
   height: auto;
 }
 
-.portfolio-container--griditem {
-  padding: 5% 5% 5% 5%;
-}
+
 
 /* Footer Styles  */i
 .footer-container {
