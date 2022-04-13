@@ -28,7 +28,7 @@ const GoogleClone = () => {
                         </p>
                         <h3>Technology:</h3>
                         <p className='googleclone-container--body'>
-                            React, React Router, CSS
+                            React, React Router, CSS, Google Custom Search API
                         </p>
                     </p>
                 </div>
