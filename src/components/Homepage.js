@@ -7,7 +7,7 @@ import Footer from './Footer'
 
 const Homepage = () => {
   return (
-    <div>
+    <div className='homepage-wrapper'>
         <HeroImage />
         <About />
         <Skills />

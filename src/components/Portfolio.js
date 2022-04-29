@@ -19,7 +19,7 @@ const Portfolio = () => {
 
                  <div className="portfolio-container--griditem">
                     <Link to='/LeblancSoftwareSolutions' >
-                        <img className='portfolio-griditem--img' src={require('../assets/portfolio-items/LSSHeroImgLarge.jpg')} alt="Portfolio Site" />
+                        <img className='portfolio-griditem--img' src={require('../assets/photos/LSS-promo-image.png')} alt="Portfolio Site" />
                     </Link>
                     <p>
                         LeBlanc Software Solutions
