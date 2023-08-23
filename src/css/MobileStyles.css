@@ -7,10 +7,11 @@
   --main-color-dark: #141616;
   --main-color-light: #4b5a53;
   --accent-color: #51eef5;
+  --font-size-small: 0.8rem;
 }
 
 body {
-  background-color: var(--main-color);
+    background-color: var(--main-color);
 }
 
 h1 {
@@ -29,6 +30,10 @@ p {
 
 .portfolio-container--griditem p {
     text-align: center;
+}
+
+.homepage-wrapper {
+    overflow: hidden;
 }
 
 /* HeroImage Component styles  */
@@ -54,6 +59,7 @@ p {
 
     .hero-container h1 {
         color: white;
+        width: 50%;
     }
 
     .hero-container--content {
@@ -85,7 +91,7 @@ p {
     .hero-container--body {
         background-color: var(--main-color);
         padding: 20px;
-        margin: 20px;
+        margin: 40px;
         margin-bottom: 10%;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
@@ -101,12 +107,11 @@ p {
 /* About Component Styles */
 
 .about-container--body {
-  background-color: var(--main-color);
-  padding: 20px;
-  margin: 20px;
-  margin-bottom: 10%;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    background-color: var(--main-color);
+    padding: 6%;
+    margin: 2% 0% 15% 0%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .about-container--bodybottom {
@@ -127,6 +132,18 @@ p {
 /* Skills Component Styles  */
 
 @media (min-device-width: 600px) {
+
+     .hero-container h1 {
+        color: white;
+        width: 25%;
+    }
+
+    .heroimage-herocontainer--img {
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+        margin: auto;
+    }
     .skills-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -159,24 +176,60 @@ p {
 
     .footer-outercontainer {
         display: block;
-        width: 100%;
+        margin: 0;
         padding-top: 20px;
         background-color: white;
         color: black;
         border-bottom: 2px solid var(--accent-color);
     }
+ 
 
-    .footer-container > ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
+   .portfolio-container--griditem {
+        padding: 5% 20% 5% 20%;
     }
 }
 
 
+@media (min-device-width: 280px) and (max-device-width: 600px) {
+     .heroimage-herocontainer--img {
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+        margin: auto;
+    }
+    .hero-container {
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        padding: 20px;
+        margin: 3% 5% 3% 5%;
+        border-radius: 25px;
+        border: 5px solid var(--accent-color);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        justify-content: center;
+    }
+    .hero-container--content {
+        display: block;
+        text-align: center;
+    }
+
+    .about-container--body {
+        background-color: var(--main-color);
+        padding: 6%;
+        margin: 2% 0% 15% 0%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .portfolio-container--griditem {
+        padding: 5% 15% 5% 15%;
+    }
 
 
 
+}
 
 
 .skills-outercontainer {
@@ -205,11 +258,24 @@ p {
   height: auto;
 }
 
-.portfolio-container--griditem {
-  padding: 5% 10% 5% 10%;
+
+
+/* Footer Styles  */i
+.footer-container {
+    text-align: center;
 }
 
-/* Footer Styles  */
+
+.contact-button {
+    background-color: var(--accent-color);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5%;
+    font-size: var(--font-size-small);
+
+}
 
 .footer-outercontainer {
     display: block;
@@ -218,27 +284,44 @@ p {
     background-color: white;
     color: black;
     border-bottom: 2px solid var(--accent-color);
+
 }
 
 
+.footer-container > p {
+    text-align: center;
+}
+
+.footer-container > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
 
 .social-list {
     list-style-type: none;
-    padding: 5% 5% 3% 5%;
     margin: 0;
     text-align: center;
     color: var(--accent-color);
 }
 
 
-.contact-button {
-    background-color: var(--accent-color);
-    color: black;
-    padding: 2%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0.50);
+
+
+
+
+
+/* Animations or Hover styles  */
+
+
+.portfolio-griditem--img:hover {
+
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    transform: scale(1.01);
+    transition: all 0.5s ease-in-out;
+    border: 5px solid var(--accent-color);
+    border-radius: 25px;
+    
+
 }
-
-
-
-

@@ -1,4 +1,19 @@
+:root {
+  --main-color: #201e1d;
+  --main-color-dark: #141616;
+  --main-color-light: #4b5a53;
+  --accent-color: #51eef5;
+  --font-size-small: 0.8rem;
+  --font-size-medium: 1rem;
+    --font-size-large: 1.2rem;
+}
+
 @media (min-device-width: 1920px) {
+     .hero-container h1 {
+        color: white;
+        width: 15%;
+    }
+
 
     .hero-container {
         background-color: white;
@@ -54,6 +69,7 @@
         background-color: var(--main-color);
         padding: 20px;
         margin: 20px;
+        width: 50%;
         margin-bottom: 10%;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
@@ -62,18 +78,76 @@
 
     .about-container--body {
         background-color: var(--main-color);
+        padding: 3%;
         margin: 2% 25% 2% 25%;
         margin-bottom: 5%;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        font-size: var(--font-size-large);
     }
 
 
     .portfolio-griditem--img {
-    width: 100%;
-    height: auto;
+        width: 100%;
+        height: auto;
     }
 
     .portfolio-container--griditem {
-    padding: 5% 20% 5% 20%;
+        padding: 5% 40% 5% 40%;
+    }
+
+    .skills-container--griditem {
+        padding: 5% 5% 5% 5%;
+    }
+    .skills-container--body {
+        background-color: var(--main-color);
+        padding: 3%;
+        margin: 2% 10% 2% 10%;
+        margin-bottom: 5%;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        font-size: var(--font-size-large);
+    }
+
+
+}
+
+
+@media (min-device-width: 1000px) {
+    .social-list li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+     .about-container--body {
+        background-color: var(--main-color);
+        padding: 3%;
+        margin: 2% 20% 2% 20%;
+        margin-bottom: 5%;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        font-size: var(--font-size-medium);
+    }
+
+    .skills-container--body {
+        background-color: var(--main-color);
+        padding: 10%;
+        margin: 2% 10% 2% 10%;
+        margin-bottom: 5%;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        font-size: var(--font-size-medium);
+    }
+
+    .portfolio-container--griditem {
+        padding: 5% 30% 5% 30%;
     }
 }
+
+
+
+html, body {
+    background-color: var(--main-color);
+    color: white;
+    height: 100%;
+    font-family: "Montserrat";
+    
+    
+}
+
